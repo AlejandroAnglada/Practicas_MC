@@ -38,8 +38,8 @@ der|die|das|ein[e]?[mn]?   { de += 1; total_palabras++; }
 
 
 [a-zA-ZÁÉÍÓÚáéíóúÑñÜü]+   { total_palabras++; }
-[ \t\n\r]+                 { /* ignorar */ }
-.                          { /* ignorar */ }
+[ \t\n\r]+                 { /* ignorar espacios */ }
+.                          { /*  ignorar puntos  */ }
 %%
 
 
